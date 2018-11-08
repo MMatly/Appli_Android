@@ -16,6 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/title_activity_array"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".POIActivity"
+            android:label="@string/title_activity_poi"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".Form"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

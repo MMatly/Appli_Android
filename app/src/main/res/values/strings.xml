@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Appli_Android</string>
+    <string name="app_name">Appli Android</string>
+    <string name="title_activity_array">ArrayActivity</string>
+    <string name="title_activity_poi">POIActivity</string>
 </resources>
