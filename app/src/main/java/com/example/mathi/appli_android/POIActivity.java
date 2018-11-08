@@ -33,12 +33,10 @@ public class POIActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poi);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         ImageView mImageView;
         final TextView  mTxtDisplay = (TextView) findViewById(R.id.txtDisplay);
-        String url = "http://www.rollingtown.com/?json=get_recent_posts";
+        String url = "http://voyage2.corellis.eu/api/v2/homev2?lat=43.14554197717751&lon=6.00.246207789145&offset=0";
 // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
 // Request a string response from the provided URL.
