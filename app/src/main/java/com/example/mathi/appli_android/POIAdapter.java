@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.List;
 
 
-public abstract class POIAdapter extends BaseAdapter implements ListAdapter {
+public class POIAdapter extends BaseAdapter implements ListAdapter {
 
         List<POI> biblio;
         LayoutInflater inflater;
@@ -36,8 +36,6 @@ public abstract class POIAdapter extends BaseAdapter implements ListAdapter {
                 holder = new ViewHolder();
                 convertView = inflater.inflate(R.layout.poi_item, null);
                 holder.tvdisplay = (TextView) convertView.findViewById(R.id.txtDisplay);
-                holder.tvCountry = (TextView) convertView
-                        .findViewById(R.id.txtCountry);
                 holder.tvmedia = (ImageView) convertView.findViewById(R.id.ImageMedia);
                 convertView.setTag(holder);
             } else {
@@ -46,7 +44,6 @@ public abstract class POIAdapter extends BaseAdapter implements ListAdapter {
 
 
             POI destination = biblio.get(position);
-            holder.tvCountry.setText(destination.getCountry());
             holder.tvdisplay.setText(destination.getDisplay());
             return convertView;
 
